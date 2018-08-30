@@ -1,25 +1,23 @@
-# Vehicle-Detection-and-Tracking
-### Udacity Self-Driving Car Engineer Nanodegree. Project: Vehicle Detection and Tracking
+**Vehicle Detection Project**
 
-This Project is the fifth task of the Udacity Self-Driving Car Nanodegree program. The main goal of the project is to create a software pipeline to identify vehicles in a video from a front-facing camera on a car. Additionally, an [Advanced Lane Line](https://github.com/NikolasEnt/Advanced-Lane-Lines) finding algorithm was added from the fourth task of the Nanodegree program.
+The goals / steps of this project are the following:
 
-![Title .gif animation](readme_img/title.gif)
+* Perform a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier
+* Optionally, you can also apply a color transform and append binned color features, as well as histograms of color, to your HOG feature vector. 
+* Note: for those first two steps don't forget to normalize your features and randomize a selection for training and testing.
+* Implement a sliding-window technique and use your trained classifier to search for vehicles in images.
+* Run your pipeline on a video stream (start with the test_video.mp4 and later implement on full project_video.mp4) and create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles.
+* Estimate a bounding box for vehicles detected.
 
-**Result:** [video](https://youtu.be/waYJjmkRZfw)
-
-For details on this and other projects, see my [website](https://nikolasent.github.io/proj/proj2)
-
-## Content of this repo
-
-- `VehicheDetect.ipynb` - Jupyter notebook with code for the project
-- `laneline.py` - python program for lane line detection from the [project 4](https://github.com/NikolasEnt/Advanced-Lane-Lines).
-- `test_images` - a directory with test images
-- `camera_cal` - a directory with camera calibration images from the [project 4](https://github.com/NikolasEnt/Advanced-Lane-Lines).
-- `project_video_proc.mp4` - the result video
-- `project_video.mp4` - the original raw video from [Udacity](https://github.com/udacity/CarND-Vehicle-Detection)
-
-**Note:** The repository does not contain any training images. You have to download and unzip the image datasets of vehicles and non-vehicles provided by Udacity and place them in appropriate directories on your own.
-Please, see links under "Data loading" header in the [VehicheDetect.ipynb](./VehicheDetect.ipynb) notebook.
+[//]: # (Image References)
+[image1]: ./examples/car_not_car.png
+[image2]: ./examples/HOG_example.jpg
+[image3]: ./examples/sliding_windows.jpg
+[image4]: ./examples/sliding_window.jpg
+[image5]: ./examples/bboxes_and_heat.png
+[image6]: ./examples/labels_map.png
+[image7]: ./examples/output_bboxes.png
+[video1]: ./project_video.mp4
 
 ## Classifier
 
