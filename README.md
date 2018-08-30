@@ -27,7 +27,7 @@ The project required to build a classifier that is able to answer if there is a 
 
 Firstly, an automated approach was applied to tune the HOG parameters (`orientations, pixels_per_cell, cells_per_block`).
 
-Something like:
+Code Example:
 ```Python
 from skopt import gp_minimize
 space  = [(8, 64),                  # nbins
