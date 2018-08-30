@@ -137,14 +137,12 @@ The final result of an image with cars boundaries and lane detection.
 
 ## Results and discussion
 
-The pipeline is able to correctly lable cars areas on a video frames. The final video is [here](https://github.com/NikolasEnt/Vehicle-Detection-and-Tracking/blob/master/project_video_proc.mp4). The [Advanced Lane Line](https://github.com/NikolasEnt/Advanced-Lane-Lines) finding algorithm was added for the lane marking.
-
-- Of course, the algorithm may fail in case of difficult light conditions, which could be partly resolved by the classifier improvement.
+- The algorithm may fail in case of difficult light conditions, which could be partly resolved by the classifier improvement.
 
 - It is possible to improve the classifier by additional data augmentation, hard negative mining, classifier parameters tuning etc.
 
-- The algorithm may have some problems in case of car overlaps another. To resolve this problem one may introduce long term memory of car position and a kind of predictive algorithm which can predict where occluded car can be and where it is worth to look for it.
+- The algorithm may have some problems in case of car overlaps another. 
 
-- To eliminate false positives on areas out of the road, one can deeply combine results from the Advanced Lane Line finding project to correctly determine the wide ROI on the whole frame by the road boundaries. Unfortunately, it was not correctly implemented (just hard coded, which is enought for the project but not a good implementation for a real-world application) due to time limitation.
+- To eliminate false positives on areas out of the road, one can deeply combine results from the Advanced Lane Line finding project to correctly determine the wide ROI on the whole frame by the road boundaries. 
 
 - The pipeline is not a real-time (about 4 fps with Lane line detection, which independently performs at 9 fps). One can further optimize number of features and feature extraction parameters as well as number of analyzed windows to increase the rate because lane line detection is quite fast.  
